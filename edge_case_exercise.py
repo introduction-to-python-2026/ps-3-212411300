@@ -5,7 +5,7 @@ def move(my_list, direction):
 
     # Move the one to the left or to the right
     if direction == 'right':
-        if index_of_one < len(my_list)-1:
+        if index_of_one < len(my_list) - 1:
             my_list[index_of_one] = 0
             my_list[index_of_one + 1] = 1
 
@@ -13,4 +13,5 @@ def move(my_list, direction):
         if index_of_one > 0:
             my_list[index_of_one] = 0
             my_list[index_of_one - 1] = 1
+   
     return my_list
